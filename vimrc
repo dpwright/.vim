@@ -168,4 +168,7 @@ vnoremap <esc><c-]> :<C-U>
   \gvy:<C-U>grep -r "<C-R><C-R>=
   \escape(@", '\.*$^~[')<CR>" *<CR>
 
+" I work with a scripting language called pawn a lot.  The extension for this is
+" .p but the syntax is much closer to C than Python, so overrule it
+let filetype_p = "C"
 
