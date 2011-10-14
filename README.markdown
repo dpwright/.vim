@@ -39,7 +39,7 @@ As of the time of writing the plugins I've installed are:
  
 * [Pathogen](https://github.com/tpope/vim-pathogen)
 * [Command-T](https://github.com/wincent/Command-T)
-* [NerdTree](http://github.com/scrooloose/nerdtree)
+* [NERDTree](http://github.com/scrooloose/nerdtree)
 * [Fugitive](http://github.com/tpope/vim-fugitive)
 * [a.vim](http://www.vim.org/scripts/script.php?script_id=31)
 * [YankRing](http://www.vim.org/scripts/script.php?script_id=1234)
