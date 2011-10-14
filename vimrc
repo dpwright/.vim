@@ -62,6 +62,15 @@ set grepformat=%f:%l:%c:%m
 " I want to use a login shell so I get all my .profile settings in :shell
 set shell=bash\ --login
 
+" Set tags files
+set tags+=~/.tags/cpp.tags
+
+" Generate and set local tags file
+command GenerateTags :!ctags -R .
+command GenerateCPPTags :!ctags --language-force=C++ -R .
+command GenerateSourceTags :!ctags --language-force=C++ -R source/
+set tags+=./tags
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Language settings (Spoken)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -114,6 +123,7 @@ let OmniCpp_MayCompleteScope = 0
 "" Leader keymappings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>t :tabe 
+map <leader>c :GenerateSourceTags<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Miscellaneous
