@@ -1,8 +1,13 @@
 " Stuff that needs to be called right at the start
 " Remove vi backwards compatibility & set up pathogen
+" This filetype toggling is for compatibility with mac & debian;
+" see http://andrewho.co.uk/weblog/vim-pathogen-with-mutt-and-git
+filetype on
+filetype off
 set nocompatible
 call pathogen#infect()
 call pathogen#helptags()
+filetype plugin indent on
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" General settings
@@ -88,7 +93,6 @@ set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
 " Turn on syntax highlighting and filetype detection
 syntax on
-filetype plugin indent on
 hi Todo cterm=BOLD ctermbg=red ctermfg=white
 
 " Mark after 80th column
@@ -125,6 +129,15 @@ let OmniCpp_MayCompleteScope = 0
 map <leader>t :tabe 
 map <leader>c :GenerateSourceTags<cr>
 
+" Quicklist heloers
+map <leader>cc :botright cope<cr>
+map <leader>n :cn<cr>
+map <leader>p :cp<cr>
+
+" Command-T
+nmap <silent> <Leader>f :CommandT<CR>
+nmap <silent> <Leader>b :CommandTBuffer<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Miscellaneous
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -154,4 +167,5 @@ vnoremap <esc><c-]> :<C-U>
   \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
   \gvy:<C-U>grep -r "<C-R><C-R>=
   \escape(@", '\.*$^~[')<CR>" *<CR>
+
 
