@@ -1,3 +1,127 @@
+" Stuff that needs to be called right at the start
+" Remove vi backwards compatibility & set up pathogen
 set nocompatible
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 call pathogen#helptags()
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" General settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nowrap                     " Don't wrap lines
+set ts=4                       " A tab is four spaces
+set sw=4                       " Autoindent tab is four spaces
+set tw=80                      " Column width 80 characters
+set backspace=indent,eol,start " Allow backspacing over everything in insert mode
+set autoindent                 " Always set autoindenting on
+set copyindent                 " Copy the previous indentation on autoindenting
+set number                     " Always show line numbers
+set ruler                      " Show line and column number in status bar
+set mouse=a                    " Mouse control in terminal
+
+" Folds
+set foldmethod=syntax
+set foldlevel=20               " Default to have all folds open
+
+" Change the mapleader from \ to ,
+let mapleader=","
+let g:mapleader=","
+
+" Show tabs
+set list
+set listchars=tab:>-
+
+" Tab expansion
+set wildmode=longest,list
+
+" Fancy searching
+set hlsearch
+set incsearch
+
+" Check file modified on cursor move
+au CursorHold * checktime
+au FocusGained * checktime
+
+" Disable vim backup
+set nobackup
+set noswapfile
+
+" Big history
+set history=1000
+set undolevels=1000
+
+" Easy window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Language settings (Spoken)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set encoding=utf-8
+set fileencodings=utf-8,iso-2022-jp,euc-jp,cp932
+let $LANG='ja'
+
+" More Japanese-friendly status line
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Syntax / Colour settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Turn on syntax highlighting and filetype detection
+syntax on
+filetype plugin indent on
+hi Todo cterm=BOLD ctermbg=red ctermfg=white
+
+" Mark after 80th column
+au BufEnter * exec 'match Todo /\%>' . &textwidth . 'v.\+/'
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Language settings (programming)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Some C Shortcuts
+ab #d #define
+ab #i #include
+ab #e #endif
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Plugin specific settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" a.vim -- Switch between header and footer
+map <silent> h :AV<cr>
+imap <silent> h <esc>:AV<cr>
+map <silent> g :IHT<cr>
+imap <silent> g <esc>:IHT<cr>
+
+" OmniCPP -- Autocomplete options
+let OmniCpp_MayCompleteDot = 0
+let OmniCpp_MayCompleteArrow = 0
+let OmniCpp_MayCompleteScope = 0
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Miscellaneous
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Code mask -- Sometimes I want to take screenshots of my vim layout but the
+"              code I'm working on may be sensitive.  Running this command
+"              masks it.
+command CodeMask :%s/\(\a\|\d\)/#/g
+
+" Session shortcuts -- I use this to save and restore a complete session
+"                      including all tabs that may be open
+set sessionoptions=blank,buffers,curdir,folds,help,resize,tabpages,winsize
+map q :mksession! ~/.vim/.session<cr>
+map s  :source ~/.vim/.session<cr>
+
+" F5 inserts today's date
+nnoremap <F5> "=strftime("%Y/%m/%d (%a)")<CR>Pa<CR><esc>
+inoremap <F5> <C-R>=strftime("%Y/%m/%d (%a)")<CR><CR>
+
+" Give a shortcut key to NERD Tree
+map <F2> :NERDTreeToggle<CR>
+
