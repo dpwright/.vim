@@ -98,7 +98,7 @@ imap <silent> h <esc>:AV<cr>
 map <silent> g :IHT<cr>
 imap <silent> g <esc>:IHT<cr>
 
-" OmniCPP -- Autocomplete options
+" OmniCPPComplete -- Autocomplete options
 let OmniCpp_MayCompleteDot = 0
 let OmniCpp_MayCompleteArrow = 0
 let OmniCpp_MayCompleteScope = 0
