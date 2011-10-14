@@ -55,6 +55,13 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" I use ack (http://betterthangrep.com/)
+set grepprg=ack-grep\ --column
+set grepformat=%f:%l:%c:%m
+
+" I want to use a login shell so I get all my .profile settings in :shell
+set shell=bash\ --login
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Language settings (Spoken)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -104,6 +111,11 @@ let OmniCpp_MayCompleteArrow = 0
 let OmniCpp_MayCompleteScope = 0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Leader keymappings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>t :tabe 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Miscellaneous
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -124,4 +136,12 @@ inoremap <F5> <C-R>=strftime("%Y/%m/%d (%a)")<CR><CR>
 
 " Give a shortcut key to NERD Tree
 map <F2> :NERDTreeToggle<CR>
+
+" Easy grepping of word under cursor (ctrl+alt+])
+nmap <esc><c-]> :grep -r "<cword>" *<cr>
+imap <esc><c-]> <esc>:grep -r "<cword>" *<cr>
+vnoremap <esc><c-]> :<C-U>
+  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+  \gvy:<C-U>grep -r "<C-R><C-R>=
+  \escape(@", '\.*$^~[')<CR>" *<CR>
 

@@ -1,4 +1,4 @@
-# vim.setup -- Daniel P. Wright's vim setup
+# My vim setup
 
 This is my current vim setup, uploaded to github to make sharing settings
 between my computers easier, as well as tracking changes.  Occasionally people
