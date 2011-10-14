@@ -44,3 +44,25 @@ As of the time of writing the plugins I've installed are:
 * [a.vim](http://www.vim.org/scripts/script.php?script_id=31)
 * [YankRing](http://www.vim.org/scripts/script.php?script_id=1234)
 * [OmniCPPComplete](http://www.vim.org/scripts/script.php?script_id=1520)
+
+## Installation
+
+Installation is quite simple.  The following will backup your existing vim files
+and get mine from github:
+
+    for i in ~/.vim ~/.vimrc ~/.gvimrc; do [ -e $i ] && mv $i $i.old; done
+    git clone --recursive git://github.com/dpwright/vim.setup.git 
+
+All files in this vim setup are contained within the hidden .vim subdirectory.
+You'll need to create a symlink to the vimrc file so that it gets read, like so:
+
+    ln -s ~/.vim/vimrc ~/.vimrc
+
+That should be all that's required!
+
+## Acknowledgements
+
+I based my vim distribution on [Steve
+Francia's](https://github.com/spf13/spf13-vim) a little bit.  In particular I
+copied the installation script above from him.  I haven't actually tried his vim
+setup out, but it looks good, so if you don't like mine give his a go!
