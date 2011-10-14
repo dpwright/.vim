@@ -42,5 +42,5 @@ As of the time of writing the plugins I've installed are:
 * [NerdTree](http://github.com/scrooloose/nerdtree)
 * [Fugitive](http://github.com/tpope/vim-fugitive)
 * [a.vim](http://www.vim.org/scripts/script.php?script_id=31)
-* [OmniCPPComplete](http://www.vim.org/scripts/script.php?script_id=1520)
 * [YankRing](http://www.vim.org/scripts/script.php?script_id=1234)
+* [OmniCPPComplete](http://www.vim.org/scripts/script.php?script_id=1520)
