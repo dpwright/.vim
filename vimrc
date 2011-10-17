@@ -123,6 +123,19 @@ let OmniCpp_MayCompleteDot = 0
 let OmniCpp_MayCompleteArrow = 0
 let OmniCpp_MayCompleteScope = 0
 
+" NERD Tree
+map <F2> :NERDTreeToggle<CR>
+
+" Taglist
+let Tlist_GainFocus_On_ToggleOpen = 1
+let Tlist_Process_File_Always = 1
+let Tlist_File_Fold_Auto_Close = 0
+let Tlist_Enable_Fold_Column = 0
+let Tlist_Use_Right_Window = 1
+let Tlist_Show_One_File = 1
+map <F3> :TlistToggle<CR>
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Leader keymappings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -157,9 +170,6 @@ map s  :source ~/.vim/.session<cr>
 nnoremap <F5> "=strftime("%Y/%m/%d (%a)")<CR>Pa<CR><esc>
 inoremap <F5> <C-R>=strftime("%Y/%m/%d (%a)")<CR><CR>
 
-" Give a shortcut key to NERD Tree
-map <F2> :NERDTreeToggle<CR>
-
 " Easy grepping of word under cursor (ctrl+alt+])
 nmap <esc><c-]> :grep -r "<cword>" *<cr>
 imap <esc><c-]> <esc>:grep -r "<cword>" *<cr>
@@ -171,4 +181,7 @@ vnoremap <esc><c-]> :<C-U>
 " I work with a scripting language called pawn a lot.  The extension for this is
 " .p but the syntax is much closer to C than Python, so overrule it
 let filetype_p = "C"
+
+" Custom statusline -- makes use of taglist
+set statusline=%<%f:\ %{Tlist_Get_Tag_Prototype_By_Line()}%h%m%r\ %=%-7.(%l,%c%V%)\ %P
 
