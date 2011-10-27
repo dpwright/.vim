@@ -15,7 +15,7 @@ filetype plugin indent on
 set nowrap                     " Don't wrap lines
 set ts=4                       " A tab is four spaces
 set sw=4                       " Autoindent tab is four spaces
-set tw=80                      " Column width 80 characters
+set tw=100                     " Column width 100 characters
 set backspace=indent,eol,start " Allow backspacing over everything in insert mode
 set autoindent                 " Always set autoindenting on
 set copyindent                 " Copy the previous indentation on autoindenting
@@ -83,9 +83,6 @@ set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,euc-jp,cp932
 let $LANG='ja'
 
-" More Japanese-friendly status line
-set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Syntax / Colour settings
@@ -95,7 +92,7 @@ set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 syntax on
 hi Todo cterm=BOLD ctermbg=red ctermfg=white
 
-" Mark after 80th column
+" Mark after 100th column
 au BufEnter * exec 'match Todo /\%>' . &textwidth . 'v.\+/'
 
 
@@ -125,14 +122,19 @@ let OmniCpp_MayCompleteScope = 0
 
 " NERD Tree
 map <F2> :NERDTreeToggle<CR>
+let NERDMouseMode = 2
+let NERDMinimalUI = 1
 
 " Taglist
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Process_File_Always = 1
 let Tlist_File_Fold_Auto_Close = 0
 let Tlist_Enable_Fold_Column = 0
+let Tlist_Display_Prototype = 0
 let Tlist_Use_Right_Window = 1
+let Tlist_Compact_Format = 1
 let Tlist_Show_One_File = 1
+let Tlist_Ctags_Cmd = 'ctags --extra=-q --c++-kinds=-p'
 map <F3> :TlistToggle<CR>
 
 
@@ -142,7 +144,7 @@ map <F3> :TlistToggle<CR>
 map <leader>t :tabe 
 map <leader>c :GenerateSourceTags<cr>
 
-" Quicklist heloers
+" Quicklist helpers
 map <leader>cc :botright cope<cr>
 map <leader>n :cn<cr>
 map <leader>p :cp<cr>
@@ -178,10 +180,18 @@ vnoremap <esc><c-]> :<C-U>
   \gvy:<C-U>grep -r "<C-R><C-R>=
   \escape(@", '\.*$^~[')<CR>" *<CR>
 
+" Search within file
+vnoremap <silent> * :<C-U>
+  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+  \gvy/<C-R><C-R>=substitute(
+  \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+  \gV:call setreg('"', old_reg, old_regtype)<CR>
+
 " I work with a scripting language called pawn a lot.  The extension for this is
-" .p but the syntax is much closer to C than Python, so overrule it
+" .p but the syntax is much closer to C than Pascal, so overrule it
 let filetype_p = "C"
 
 " Custom statusline -- makes use of taglist
-set statusline=%<%f:\ %{Tlist_Get_Tag_Prototype_By_Line()}%h%m%r\ %=%-7.(%l,%c%V%)\ %P
+" Disabled for now as it was annoying me
+" set statusline=%<%f:\ %{Tlist_Get_Tag_Prototype_By_Line()}%h%m%r\ %=%-7.(%l,%c%V%)\ %P
 
