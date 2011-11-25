@@ -10,3 +10,6 @@
 	path = bundle/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
 	ignore = dirty
+[submodule "bundle/vimroom"]
+	path = bundle/vimroom
+	url = git@github.com:mikewest/vimroom.git
