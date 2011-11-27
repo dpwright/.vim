@@ -81,6 +81,7 @@ set tags+=./tags
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,euc-jp,cp932
+set ambiwidth=double            "~/.Xresources should have XTerm*cjkWidth: true
 let $LANG='ja'
 
 
@@ -124,6 +125,7 @@ let OmniCpp_MayCompleteScope = 0
 map <F2> :NERDTreeToggle<CR>
 let NERDMouseMode = 2
 let NERDMinimalUI = 1
+let NERDTreeQuitOnOpen = 1
 
 " Taglist
 let Tlist_GainFocus_On_ToggleOpen = 1
@@ -132,6 +134,7 @@ let Tlist_File_Fold_Auto_Close = 0
 let Tlist_Enable_Fold_Column = 0
 let Tlist_Display_Prototype = 0
 let Tlist_Use_Right_Window = 1
+let Tlist_Close_On_Select = 1
 let Tlist_Compact_Format = 1
 let Tlist_Show_One_File = 1
 let Tlist_Ctags_Cmd = 'ctags --extra=-q --c++-kinds=-p'
@@ -195,3 +198,4 @@ let filetype_p = "C"
 " Disabled for now as it was annoying me
 " set statusline=%<%f:\ %{Tlist_Get_Tag_Prototype_By_Line()}%h%m%r\ %=%-7.(%l,%c%V%)\ %P
 
+" FreeBSD security recommends removing modeline support to avoid trojans
