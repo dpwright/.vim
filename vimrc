@@ -140,6 +140,9 @@ let Tlist_Show_One_File = 1
 let Tlist_Ctags_Cmd = 'exctags --extra=-q --c++-kinds=-p'
 map <F3> :TlistToggle<CR>
 
+" Yankring
+let g:yankring_history_dir='~/.vim/'
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Leader keymappings
