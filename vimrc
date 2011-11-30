@@ -71,9 +71,9 @@ set shell=bash\ --login
 set tags+=~/.tags/cpp.tags
 
 " Generate and set local tags file
-command GenerateTags :!exctags -R .
-command GenerateCPPTags :!exctags --language-force=C++ -R .
-command GenerateSourceTags :!exctags --language-force=C++ -R source/
+command GenerateTags :silent execute "!exctags -R . &" | redraw!
+command GenerateCPPTags :silent execute "!exctags --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -R . &" | redraw!
+command GenerateSourceTags :silent execute "!exctags --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -R source/ &" | redraw!
 set tags+=./tags
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -190,9 +190,9 @@ vnoremap <silent> * :<C-U>
   \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
   \gV:call setreg('"', old_reg, old_regtype)<CR>
 
-" I work with a scripting language called pawn a lot.  The extension for this is
-" .p but the syntax is much closer to C than Pascal, so overrule it
-let filetype_p = "C"
+" I work with a scripting language called pawn a lot.
+" I've copied the C syntax file into syntax/pawn for this purpose
+let filetype_p = "pawn"
 
 " Custom statusline -- makes use of taglist
 " Disabled for now as it was annoying me
