@@ -71,9 +71,9 @@ set shell=bash\ --login
 set tags+=~/.tags/cpp.tags
 
 " Generate and set local tags file
-command GenerateTags :!ctags -R .
-command GenerateCPPTags :!ctags --language-force=C++ -R .
-command GenerateSourceTags :!ctags --language-force=C++ -R source/
+command GenerateTags :!exctags -R .
+command GenerateCPPTags :!exctags --language-force=C++ -R .
+command GenerateSourceTags :!exctags --language-force=C++ -R source/
 set tags+=./tags
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -137,7 +137,7 @@ let Tlist_Use_Right_Window = 1
 let Tlist_Close_On_Select = 1
 let Tlist_Compact_Format = 1
 let Tlist_Show_One_File = 1
-let Tlist_Ctags_Cmd = 'ctags --extra=-q --c++-kinds=-p'
+let Tlist_Ctags_Cmd = 'exctags --extra=-q --c++-kinds=-p'
 map <F3> :TlistToggle<CR>
 
 
