@@ -9,8 +9,9 @@ if exists("b:current_syntax")
   finish
 endif
 
-" A bunch of useful C keywords
+" A bunch of useful pawn keywords
 syn keyword	cStatement	goto break return continue asm
+syn keyword	cStatement	new
 syn keyword	cLabel		case default
 syn keyword	cConditional	if else switch
 syn keyword	cRepeat		while for do
@@ -24,6 +25,9 @@ syn match	cBadContinuation contained "\\\s\+$"
 
 " cCommentGroup allows adding matches for special things in comments
 syn cluster	cCommentGroup	contains=cTodo,cBadContinuation
+
+" In pawn, words followed by a colon are tags
+" TODO except in case statements!
 
 " String and Character constants
 " Highlight special characters (those which have a backslash) differently
@@ -284,7 +288,7 @@ if !exists("c_no_if0")
 endif
 syn region	cIncluded	display contained start=+"+ skip=+\\\\\|\\"+ end=+"+
 syn match	cIncluded	display contained "<[^>]*>"
-syn match	cInclude	display "^\s*\(%:\|#\)\s*include\>\s*["<]" contains=cIncluded
+syn match	cInclude	display "^\s*\(%:\|#\)\s*include\>\s*" contains=cIncluded
 "syn match cLineSkip	"\\$"
 syn cluster	cPreProcGroup	contains=cPreCondit,cIncluded,cInclude,cDefine,cErrInParen,cErrInBracket,cUserLabel,cSpecial,cOctalZero,cCppOut,cCppOut2,cCppSkip,cFormat,cNumber,cFloat,cOctal,cOctalError,cNumbersCom,cString,cCommentSkip,cCommentString,cComment2String,@cCommentGroup,cCommentStartError,cParen,cBracket,cMulti
 syn region	cDefine		start="^\s*\(%:\|#\)\s*\(define\|undef\)\>" skip="\\$" end="$" keepend contains=ALLBUT,@cPreProcGroup,@Spell

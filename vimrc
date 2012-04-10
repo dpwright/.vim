@@ -61,8 +61,9 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 " I use ack (http://betterthangrep.com/)
-set grepprg=ack-grep\ --column
-set grepformat=%f:%l:%c:%m
+" (Temporarily disabled)
+"set grepprg=ack-grep\ --column
+"set grepformat=%f:%l:%c:%m
 
 " I want to use a login shell so I get all my .profile settings in :shell
 set shell=bash\ --login
@@ -94,7 +95,15 @@ syntax on
 hi Todo cterm=BOLD ctermbg=red ctermfg=white
 
 " Mark after 100th column
-au BufEnter * exec 'match Todo /\%>' . &textwidth . 'v.\+/'
+" Only for code
+au FileType c,cpp exec 'match Todo /\%>' . &textwidth . 'v.\+/'
+
+" Use peaksea theme for diffs as default themes are awful
+if &diff
+	set t_Co=256
+	set background=dark
+	colorscheme peaksea
+endif
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -197,8 +206,44 @@ vnoremap <silent> * :<C-U>
 " I've copied the C syntax file into syntax/pawn for this purpose
 let filetype_p = "pawn"
 
+" Support visual-studio style error output
+set errorformat+=\ %#%f(%l\\\,%c):\ %m
+
 " Custom statusline -- makes use of taglist
 " Disabled for now as it was annoying me
 " set statusline=%<%f:\ %{Tlist_Get_Tag_Prototype_By_Line()}%h%m%r\ %=%-7.(%l,%c%V%)\ %P
 
-" FreeBSD security recommends removing modeline support to avoid trojans
+" Another custom statusline -- this one uses fugitive
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
+" Cool little svn blame snippet -- gl to blame a range of lines.  From here:
+" http://tammersaleh.com/posts/quick-vim-svn-blame-snippet
+vmap gl :<C-U>!svn blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
+
+" Open a shell command in a scratch buffer. From
+" http://vim.wikia.com/wiki/Display_output_of_shell_commands_in_new_window
+command! -complete=shellcmd -nargs=+ Shell call s:RunShellCommand(<q-args>)
+function! s:RunShellCommand(cmdline)
+	let isfirst = 1
+	let words = []
+	for word in split(a:cmdline)
+		if isfirst
+			let isfirst = 0  " don't change first word (shell command)
+		else
+			if word[0] =~ '\v[%#<]'
+				let word = expand(word)
+			endif
+			let word = shellescape(word, 1)
+		endif
+		call add(words, word)
+	endfor
+	let expanded_cmdline = join(words)
+	belowright new
+	setlocal buftype=nofile bufhidden=wipe nobuflisted noswapfile nowrap
+	call setline(1, 'You entered:  ' . a:cmdline)
+	call setline(2, 'Expanded to:  ' . expanded_cmdline)
+	call append(line('$'), substitute(getline(2), '.', '=', 'g'))
+	silent execute '$read !'. expanded_cmdline
+	1
+endfunction
+
