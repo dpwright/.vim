@@ -58,7 +58,7 @@ git clone --recursive git://github.com/dpwright/.vim.git
 All files in this vim setup are contained within the hidden .vim subdirectory.
 You'll need to create a symlink to the vimrc file so that it gets read, like so:
 
-```sh
+```bash
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
