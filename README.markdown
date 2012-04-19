@@ -51,7 +51,7 @@ Installation is quite simple.  The following will backup your existing vim files
 and get mine from github:
 
     for i in ~/.vim ~/.vimrc ~/.gvimrc; do [ -e $i ] && mv $i $i.old; done
-    git clone --recursive git://github.com/dpwright/vim.setup.git 
+    git clone --recursive git://github.com/dpwright/.vim.git 
 
 All files in this vim setup are contained within the hidden .vim subdirectory.
 You'll need to create a symlink to the vimrc file so that it gets read, like so:
