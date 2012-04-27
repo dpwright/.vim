@@ -34,6 +34,3 @@
 [submodule "bundle/vimerl"]
 	path = bundle/vimerl
 	url = https://github.com/jimenezrick/vimerl.git
-[submodule "CamelCaseMotion"]
-	path = CamelCaseMotion
-	url = https://github.com/bkad/CamelCaseMotion.git
