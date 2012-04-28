@@ -119,6 +119,9 @@ ab #d #define
 ab #i #include
 ab #e #endif
 
+" Erlang manpage directory
+let g:erlang_man_path='/usr/local/share/man'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Plugin specific settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
