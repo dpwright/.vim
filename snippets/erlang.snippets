@@ -1,0 +1,40 @@
+#include EUnit
+snippet ince
+	-include_lib("eunit/include/eunit.hrl"). 
+# Assert
+snippet ?
+	?assert(${1:expression})
+# Assert Not
+snippet ?not
+	?assertNot(${1:expression})
+# Assert Equal
+snippet ?equal
+	?assertEqual(${1:expected}, ${2:actual})
+# Assert Match
+snippet ?match
+	?assertMatch(${1:pattern}, ${2:expression})
+# Assert Error
+snippet ?error
+	?assertError(${1:pattern}, ${2:expression})
+# Assert Generator
+snippet ?_
+	?_assert(${1:expression})
+# Assert Not Generator
+snippet ?_not
+	?_assertNot(${1:expression})
+# Assert Equal Generator
+snippet ?_equal
+	?_assertEqual(${2:expected}, ${3:actual})
+# Assert Match Generator
+snippet ?_match
+	?_assertMatch(${1:pattern}, ${2:expression})
+# Assert Error Generator
+snippet ?_error
+	?_assertError(${1:pattern}, ${2:expression})
+# Test Method Template
+snippet test
+	${1:unit}_${2:scenario}_${3:expectedResult}_test() ->
+		?assert${4:assertion}(${5:expected}, ${6:actual}).
+# Test Fixture
+snippet fixture
+	{${1:setup}, ${2:Where}, ${3:Setup}, ${4:Cleanup}, ${5:Instantiator}}
