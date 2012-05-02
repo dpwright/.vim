@@ -100,10 +100,14 @@ au FileType c,cpp exec 'match Todo /\%>' . &textwidth . 'v.\+/'
 
 " Use peaksea theme for diffs as default themes are awful
 if &diff
-	set t_Co=256
-	set background=dark
 	colorscheme peaksea
+else
+	colorscheme desert256
 endif
+
+" Theme settings -- is setting t_Co in here a good idea?
+set t_Co=256
+set background=dark
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
