@@ -107,7 +107,7 @@ if &diff
 	colorscheme peaksea
 else
 	"colorscheme desert256
-	let g:solarized_termcolors=256
+	"let g:solarized_termcolors=256
 	colorscheme solarized
 endif
 
