@@ -98,16 +98,18 @@ hi Todo cterm=BOLD ctermbg=red ctermfg=white
 " Only for code
 au FileType c,cpp exec 'match Todo /\%>' . &textwidth . 'v.\+/'
 
+" Theme settings -- is setting t_Co in here a good idea?
+set background=dark
+
 " Use peaksea theme for diffs as default themes are awful
 if &diff
+	set t_Co=256
 	colorscheme peaksea
 else
-	colorscheme desert256
+	"colorscheme desert256
+	let g:solarized_termcolors=256
+	colorscheme solarized
 endif
-
-" Theme settings -- is setting t_Co in here a good idea?
-set t_Co=256
-set background=dark
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
