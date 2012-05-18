@@ -95,21 +95,18 @@ syntax on
 hi Todo cterm=BOLD ctermbg=red ctermfg=white
 
 " Mark after 100th column
-" Only for code
+" Only for code (and when not diffing)
+if &diff
+else
 au FileType c,cpp exec 'match Todo /\%>' . &textwidth . 'v.\+/'
+endif
 
 " Theme settings -- is setting t_Co in here a good idea?
 set background=dark
 
-" Use peaksea theme for diffs as default themes are awful
-if &diff
-	set t_Co=256
-	colorscheme peaksea
-else
-	"colorscheme desert256
-	"let g:solarized_termcolors=256
-	colorscheme solarized
-endif
+let g:solarized_termcolors=16
+set t_Co=16
+colorscheme solarized
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
