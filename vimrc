@@ -171,8 +171,9 @@ map <leader>n :cn<cr>
 map <leader>p :cp<cr>
 
 " Command-T
-nmap <silent> <Leader>f :CommandT<CR>
-nmap <silent> <Leader>b :CommandTBuffer<CR>
+nnoremap <silent> <Leader>f :CommandT<CR>
+nnoremap <silent> <Leader>s :CommandTTag<CR>
+nnoremap <silent> <Leader>b :CommandTBuffer<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Miscellaneous
