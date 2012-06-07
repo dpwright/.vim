@@ -254,3 +254,6 @@ function! s:RunShellCommand(cmdline)
 	1
 endfunction
 
+" Support the Man command to look up manpages within vim (like vim help)
+runtime ftplugin/man.vim
+
