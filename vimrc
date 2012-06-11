@@ -256,4 +256,5 @@ endfunction
 
 " Support the Man command to look up manpages within vim (like vim help)
 runtime ftplugin/man.vim
+let PAGER=''
 
