@@ -1,4 +1,6 @@
 set expandtab
+set nonumber
 set tw=80
-set wrap
 retab
+
+setlocal nomodifiable
