@@ -61,3 +61,12 @@
 [submodule "bundle/patchreview-vim"]
 	path = bundle/patchreview-vim
 	url = git://github.com/junkblocker/patchreview-vim.git
+[submodule "bundle/calendar-vim"]
+	path = bundle/calendar-vim
+	url = git://github.com/mattn/calendar-vim.git
+[submodule "bundle/vim-gnupg"]
+	path = bundle/vim-gnupg
+	url = git://github.com/robertkrimen/vim-gnupg.git
+[submodule "bundle/vim-journal"]
+	path = bundle/vim-journal
+	url = git://github.com/jmcantrell/vim-journal.git
