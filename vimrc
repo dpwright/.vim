@@ -258,3 +258,6 @@ endfunction
 runtime ftplugin/man.vim
 let PAGER=''
 
+" Journal settings
+let g:journal_encrypted=1
+let g:journal_directory="~/.journal"
