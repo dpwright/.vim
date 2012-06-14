@@ -21,7 +21,21 @@ set autoindent                 " Always set autoindenting on
 set copyindent                 " Copy the previous indentation on autoindenting
 set number                     " Always show line numbers
 set ruler                      " Show line and column number in status bar
-set mouse=a                    " Mouse control in terminal
+
+" Mouse support (https://wincent.com/blog/tweaking-command-t-and-vim-for-use-in-the-terminal-and-tmux)
+if has('mouse')
+  set mouse=a
+  if &term =~ "xterm" || &term =~ "screen"
+    " for some reason, doing this directly with 'set ttymouse=xterm2'
+    " doesn't work -- 'set ttymouse?' returns xterm2 but the mouse
+    " makes tmux enter copy mode instead of selecting or scrolling
+    " inside Vim -- but luckily, setting it up from within autocmds
+    " works
+    autocmd VimEnter * set ttymouse=xterm2
+    autocmd FocusGained * set ttymouse=xterm2
+    autocmd BufEnter * set ttymouse=xterm2
+  endif
+endif
 
 " Folds
 set foldmethod=syntax
