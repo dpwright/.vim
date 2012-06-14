@@ -118,6 +118,7 @@ endif
 " Theme settings -- is setting t_Co in here a good idea?
 set background=dark
 
+let g:solarized_termtrans = 1
 let g:solarized_termcolors=16
 set t_Co=16
 colorscheme solarized
