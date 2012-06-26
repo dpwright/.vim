@@ -176,6 +176,9 @@ let g:yankring_history_dir='~/.vim/'
 " Powerline
 let g:Powerline_symbols = 'fancy'
 
+" Tumblr
+source ~/.vim/tumblrsettings.vim
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Leader keymappings
