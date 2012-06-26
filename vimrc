@@ -234,6 +234,7 @@ vnoremap <silent> * :<C-U>
 " I work with a scripting language called pawn a lot.
 " I've copied the C syntax file into syntax/pawn for this purpose
 let filetype_p = "pawn"
+let filetype_inc = "pawn"
 
 " Support visual-studio style error output
 set errorformat+=\ %#%f(%l\\\,%c):\ %m
