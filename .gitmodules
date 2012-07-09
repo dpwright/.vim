@@ -75,4 +75,4 @@
 	url = git://github.com/Lokaltog/vim-powerline.git
 [submodule "bundle/tumble"]
 	path = bundle/tumble
-	url = git@github.com:dpwright/Tumble.git
+	url = git://github.com/fmoralesc/Tumble.git
