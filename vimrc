@@ -176,6 +176,9 @@ let g:tagbar_autoclose = 1
 let g:tagbar_compact = 1
 map <F3> :TagbarToggle<CR>
 
+" Gundo
+map <F4> :GundoToggle<CR>
+
 " Yankring
 let g:yankring_history_dir='~/.vim/'
 
