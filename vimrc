@@ -284,3 +284,4 @@ let PAGER=''
 " Journal settings
 let g:journal_encrypted=1
 let g:journal_directory="~/.journal"
+let g:GPGDefaultRecipients="dani@dpwright.com"
