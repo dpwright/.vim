@@ -15,7 +15,7 @@ filetype plugin indent on
 set nowrap                     " Don't wrap lines
 set ts=4                       " A tab is four spaces
 set sw=4                       " Autoindent tab is four spaces
-set tw=100                     " Column width 100 characters
+set tw=80                      " Column width 80 characters
 set backspace=indent,eol,start " Allow backspacing over everything in insert mode
 set autoindent                 " Always set autoindenting on
 set copyindent                 " Copy the previous indentation on autoindenting
@@ -109,7 +109,7 @@ let $LANG='ja'
 syntax on
 hi Todo cterm=BOLD ctermbg=red ctermfg=white
 
-" Mark after 100th column
+" Mark after textwidth-defined column
 " Only for code (and when not diffing)
 if &diff
 else
