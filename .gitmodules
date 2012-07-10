@@ -76,3 +76,6 @@
 [submodule "bundle/tumble"]
 	path = bundle/tumble
 	url = git://github.com/fmoralesc/Tumble.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git://github.com/majutsushi/tagbar

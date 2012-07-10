@@ -169,7 +169,12 @@ let Tlist_Close_On_Select = 1
 let Tlist_Compact_Format = 1
 let Tlist_Show_One_File = 1
 let Tlist_Ctags_Cmd = 'exctags --extra=-q --c++-kinds=-p'
-map <F3> :TlistToggle<CR>
+"map <F3> :TlistToggle<CR>
+
+" Tagbars
+let g:tagbar_autoclose = 1
+let g:tagbar_compact = 1
+map <F3> :TagbarToggle<CR>
 
 " Yankring
 let g:yankring_history_dir='~/.vim/'
