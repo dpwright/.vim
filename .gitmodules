@@ -72,7 +72,7 @@
 	url = git://github.com/jmcantrell/vim-journal.git
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
-	url = git://github.com/Lokaltog/vim-powerline.git
+	url = git://github.com/pearofducks/vim-powerline.git
 [submodule "bundle/tumble"]
 	path = bundle/tumble
 	url = git://github.com/fmoralesc/Tumble.git
