@@ -124,6 +124,25 @@ let g:solarized_termcolors=16
 set t_Co=16
 colorscheme solarized
 
+" Rainbow parentheses
+let g:rbpt_max = 30
+let g:rbpt_colorpairs = [
+               \ ['White',       'White'],
+               \ ['Cyan',        'Cyan'],
+               \ ['Red',         'Red'],
+               \ ['DarkBlue',    'DarkBlue'],
+               \ ['DarkMagenta', 'DarkMagenta'],
+               \ ['DarkYellow',  'DarkYellow'],
+               \ ['Magenta',     'Magenta'],
+               \ ['DarkGreen',   'DarkGreen'],
+               \ ['DarkCyan',    'DarkCyan'],
+               \ ['DarkRed',     'DarkRed'],
+               \ ]
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Language settings (programming)

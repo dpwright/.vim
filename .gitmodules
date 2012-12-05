@@ -88,3 +88,6 @@
 [submodule "bundle/vimclojure"]
 	path = bundle/vimclojure
 	url = git://github.com/vim-scripts/VimClojure.git
+[submodule "bundle/rainbow_parentheses.vim"]
+	path = bundle/rainbow_parentheses.vim
+	url = git://github.com/kien/rainbow_parentheses.vim.git
