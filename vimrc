@@ -293,3 +293,7 @@ let PAGER=''
 let g:journal_encrypted=1
 let g:journal_directory="~/.journal"
 let g:GPGDefaultRecipients="dani@dpwright.com"
+
+" View .docx (MS Word) documents in vim
+"autocmd BufReadPre *.docx set ro
+"autocmd BufReadPost *.docx %!docx2txt.pl
