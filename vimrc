@@ -137,6 +137,11 @@ ab #e #endif
 " Erlang manpage directory
 let g:erlang_man_path='/usr/local/share/man'
 
+" VimClojure settings
+let g:vimclojure#ParenRainbow = 0
+let g:vimclojure#HighlightBuiltins = 1
+let g:vimclojure#DynamicHighlighting = 1
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Plugin specific settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
