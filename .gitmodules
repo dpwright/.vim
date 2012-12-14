@@ -48,6 +48,7 @@
 [submodule "bundle/patchreview-vim"]
 	path = bundle/patchreview-vim
 	url = git://github.com/junkblocker/patchreview-vim.git
+	ignore = dirty
 [submodule "bundle/calendar-vim"]
 	path = bundle/calendar-vim
 	url = git://github.com/mattn/calendar-vim.git
