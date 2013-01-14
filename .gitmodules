@@ -91,3 +91,6 @@
 [submodule "bundle/ifdef-highlighting"]
 	path = bundle/ifdef-highlighting
 	url = git://github.com/vim-scripts/ifdef-highlighting.git
+[submodule "bundle/vim-sleuth"]
+	path = bundle/vim-sleuth
+	url = git://github.com/tpope/vim-sleuth.git
