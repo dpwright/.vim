@@ -137,3 +137,6 @@
 [submodule "bundle/vim-sourcepawn"]
 	path = bundle/vim-sourcepawn
 	url = git://github.com/withgod/vim-sourcepawn.git
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = git://github.com/groenewege/vim-less.git
