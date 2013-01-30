@@ -100,3 +100,6 @@
 [submodule "bundle/rust.vim"]
 	path = bundle/rust.vim
 	url = git://github.com/wting/rust.vim.git
+[submodule "bundle/Mixed-sourceassembly-syntax-objdump"]
+	path = bundle/Mixed-sourceassembly-syntax-objdump
+	url = git://github.com/vim-scripts/Mixed-sourceassembly-syntax-objdump
