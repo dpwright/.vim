@@ -103,3 +103,6 @@
 [submodule "bundle/Mixed-sourceassembly-syntax-objdump"]
 	path = bundle/Mixed-sourceassembly-syntax-objdump
 	url = git://github.com/vim-scripts/Mixed-sourceassembly-syntax-objdump
+[submodule "bundle/JpFormat.vim"]
+	path = bundle/JpFormat.vim
+	url = git://github.com/fuenor/JpFormat.vim
