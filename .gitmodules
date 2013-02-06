@@ -106,3 +106,6 @@
 [submodule "bundle/JpFormat.vim"]
 	path = bundle/JpFormat.vim
 	url = git://github.com/fuenor/JpFormat.vim
+[submodule "bundle/vim-gf-ext"]
+	path = bundle/vim-gf-ext
+	url = git@github.com:dpwright/vim-gf-ext
