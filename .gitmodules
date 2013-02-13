@@ -116,3 +116,6 @@
 	path = bundle/vim-gf-ext
 	url = git@github.com:dpwright/vim-gf-ext
 	ignore = dirty
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = git://github.com/scrooloose/syntastic.git
