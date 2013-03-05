@@ -116,3 +116,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "bundle/Zenburn"]
+	path = bundle/Zenburn
+	url = git://github.com/jnurmine/Zenburn.git
