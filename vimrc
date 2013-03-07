@@ -83,9 +83,9 @@ set shell=bash\ --login
 set tags+=~/.tags/cpp.tags
 
 " Generate and set local tags file
-command GenerateTags :silent execute "!exctags -R . &" | redraw!
-command GenerateCPPTags :silent execute "!exctags --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -R . &" | redraw!
-command GenerateSourceTags :silent execute "!exctags --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -R source/ &" | redraw!
+command GenerateTags :silent execute "!ctags -R . &" | redraw!
+command GenerateCPPTags :silent execute "!ctags --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -R . &" | redraw!
+command GenerateSourceTags :silent execute "!ctags --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -R source/ &" | redraw!
 set tags+=./tags
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -190,7 +190,7 @@ let Tlist_Use_Right_Window = 1
 let Tlist_Close_On_Select = 1
 let Tlist_Compact_Format = 1
 let Tlist_Show_One_File = 1
-let Tlist_Ctags_Cmd = 'exctags --extra=-q --c++-kinds=-p'
+"let Tlist_Ctags_Cmd = 'ctags --extra=-q --c++-kinds=-p'
 "map <F3> :TlistToggle<CR>
 
 " Tagbars
