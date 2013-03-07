@@ -12,6 +12,7 @@
 [submodule "bundle/vim-git"]
 	path = bundle/vim-git
 	url = https://github.com/tpope/vim-git.git
+	ignore = dirty
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
@@ -33,6 +34,7 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim.git
+	ignore = dirty
 [submodule "bundle/vim-cucumber"]
 	path = bundle/vim-cucumber
 	url = https://github.com/tpope/vim-cucumber.git
@@ -58,6 +60,7 @@
 [submodule "bundle/vim-journal"]
 	path = bundle/vim-journal
 	url = git://github.com/jmcantrell/vim-journal.git
+	ignore = dirty
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = git://github.com/pearofducks/vim-powerline.git
@@ -88,6 +91,7 @@
 [submodule "bundle/vim-clojure-static"]
 	path = bundle/vim-clojure-static
 	url = git://github.com/guns/vim-clojure-static
+	ignore = dirty
 [submodule "bundle/ifdef-highlighting"]
 	path = bundle/ifdef-highlighting
 	url = git://github.com/vim-scripts/ifdef-highlighting.git
@@ -100,12 +104,15 @@
 [submodule "bundle/rust.vim"]
 	path = bundle/rust.vim
 	url = git://github.com/wting/rust.vim.git
+	ignore = dirty
 [submodule "bundle/Mixed-sourceassembly-syntax-objdump"]
 	path = bundle/Mixed-sourceassembly-syntax-objdump
 	url = git://github.com/vim-scripts/Mixed-sourceassembly-syntax-objdump
 [submodule "bundle/JpFormat.vim"]
 	path = bundle/JpFormat.vim
 	url = git://github.com/fuenor/JpFormat.vim
+	ignore = dirty
 [submodule "bundle/vim-gf-ext"]
 	path = bundle/vim-gf-ext
 	url = git@github.com:dpwright/vim-gf-ext
+	ignore = dirty
