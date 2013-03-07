@@ -57,10 +57,6 @@ set wildmode=longest,list
 set hlsearch
 set incsearch
 
-" Check file modified on cursor move
-au CursorHold * checktime
-au FocusGained * checktime
-
 " Disable vim backup
 set nobackup
 set noswapfile
