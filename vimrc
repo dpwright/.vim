@@ -77,7 +77,12 @@ map <C-l> <C-w>l
 "set grepformat=%f:%l:%c:%m
 
 " I want to use a login shell so I get all my .profile settings in :shell
-set shell=bash\ --login
+if has("win32")
+  set shell=cmd.exe
+  set shellcmdflag=/C
+else
+  set shell=bash\ --login
+endif
 
 " Set tags files
 set tags+=~/.tags/cpp.tags
@@ -205,7 +210,11 @@ map <F4> :GundoToggle<CR>
 let g:yankring_history_dir='~/.vim/'
 
 " Powerline
-let g:Powerline_symbols = 'fancy'
+if has("win32")
+  let g:Powerline_symbols = 'compatible'
+else
+  let g:Powerline_symbols = 'fancy'
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Leader keymappings
