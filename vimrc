@@ -226,10 +226,17 @@ map <leader>c :GenerateSourceTags<cr>
 " Quicklist helpers
 map <leader>cc :botright cope<cr>
 
-" Command-T
-nnoremap <silent> <Leader>f :CommandT<CR>
-nnoremap <silent> <Leader>s :CommandTTag<CR>
-nnoremap <silent> <Leader>b :CommandTBuffer<CR>
+" Ctrl-P
+let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'dir', 'rtscript',
+                        \ 'undo', 'line', 'changes', 'mixed', 'bookmarkdir']
+let g:ctrlp_switch_buffer = 'et'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.git|\.hg|\.svn|obj|romfiles)$',
+  \ 'file': '\v\.(exe|so|dll|axf|amx)$',
+  \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
+  \ }
+let g:ctrlp_map = '<c-p>'
+nnoremap <silent> <Leader>f :CtrlP<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Miscellaneous
