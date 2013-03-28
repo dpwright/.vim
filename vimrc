@@ -250,8 +250,22 @@ command CodeMask :%s/\(\a\|\d\)/#/g
 " Session shortcuts -- I use this to save and restore a complete session
 "                      including all tabs that may be open
 set sessionoptions=blank,buffers,curdir,folds,help,resize,tabpages,winsize
-map q :mksession! ~/.vim/.session<cr>
-map s  :source ~/.vim/.session<cr>
+function! s:MakeAndSetSession()
+	let sessionfile = ".session.vim"
+	exe "mksession! ".sessionfile
+	au VimLeave * :exe "mksession! ".sessionfile
+endfunction
+
+function! s:SourceAndSetSession()
+	let sessionfile = ".session.vim"
+	if(filereadable(sessionfile))
+		exe "source ".sessionfile
+	endif
+	au VimLeave * :exe "mksession! ".sessionfile
+endfunction
+
+map <silent> <leader>w :call <SID>MakeAndSetSession()<cr>
+map <silent> <leader>q :call <SID>SourceAndSetSession()<cr>
 
 " F5 inserts today's date
 nnoremap <F5> "=strftime("%Y/%m/%d (%a)")<CR>Pa<CR><esc>
