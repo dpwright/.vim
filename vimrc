@@ -98,7 +98,8 @@ set tags+=./tags
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,euc-jp,cp932
-set ambiwidth=double            "~/.Xresources should have XTerm*cjkWidth: true
+"set ambiwidth=double            "~/.Xresources should have XTerm*cjkWidth: true
+set ambiwidth=single            "Better for greek letters...
 let $LANG='ja'
 
 
