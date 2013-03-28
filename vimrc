@@ -110,11 +110,11 @@ let $LANG='ja'
 syntax on
 hi Todo cterm=BOLD ctermbg=red ctermfg=white
 
-" Mark after textwidth-defined column
+" Mark textwidth-defined column
 " Only for code (and when not diffing)
 if &diff
 else
-au FileType c,cpp exec 'match Todo /\%>' . &textwidth . 'v.\+/'
+au FileType c,cpp,ruby,pawn exec 'set colorcolumn=' . &textwidth
 endif
 
 " Theme settings -- is setting t_Co in here a good idea?
