@@ -225,8 +225,6 @@ map <leader>c :GenerateSourceTags<cr>
 
 " Quicklist helpers
 map <leader>cc :botright cope<cr>
-map <leader>n :cn<cr>
-map <leader>p :cp<cr>
 
 " Command-T
 nnoremap <silent> <Leader>f :CommandT<CR>
