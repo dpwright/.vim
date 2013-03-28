@@ -272,12 +272,12 @@ nnoremap <F5> "=strftime("%Y/%m/%d (%a)")<CR>Pa<CR><esc>
 inoremap <F5> <C-R>=strftime("%Y/%m/%d (%a)")<CR><CR>
 
 " Easy grepping of word under cursor (ctrl+alt+])
-nmap <esc><c-]> :grep -r "<cword>" *<cr>
-imap <esc><c-]> <esc>:grep -r "<cword>" *<cr>
+nmap <esc><c-]> :grep -r "<cword>" 
+imap <esc><c-]> <esc>:grep -r "<cword>" 
 vnoremap <esc><c-]> :<C-U>
   \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
   \gvy:<C-U>grep -r "<C-R><C-R>=
-  \escape(@", '\.*$^~[')<CR>" *<CR>
+  \escape(@", '\.*$^~[')<CR>" 
 
 " Search within file
 vnoremap <silent> * :<C-U>
