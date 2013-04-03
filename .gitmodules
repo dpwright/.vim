@@ -122,3 +122,6 @@
 [submodule "bundle/vim-tup"]
 	path = bundle/vim-tup
 	url = git://github.com/dpwright/vim-tup.git
+[submodule "bundle/vim-dispatch"]
+	path = bundle/vim-dispatch
+	url = git://github.com/tpope/vim-dispatch.git
