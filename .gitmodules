@@ -125,3 +125,6 @@
 [submodule "bundle/vim-dispatch"]
 	path = bundle/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
+[submodule "bundle/vim-racket"]
+	path = bundle/vim-racket
+	url = git://github.com/wlangstroth/vim-racket.git
