@@ -128,3 +128,6 @@
 [submodule "bundle/vim-racket"]
 	path = bundle/vim-racket
 	url = git://github.com/wlangstroth/vim-racket.git
+[submodule "bundle/vim-redl"]
+	path = bundle/vim-redl
+	url = git://github.com/dgrnbrg/vim-redl.git
