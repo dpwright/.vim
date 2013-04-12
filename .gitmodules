@@ -134,3 +134,6 @@
 [submodule "bundle/vim-classpath"]
 	path = bundle/vim-classpath
 	url = git://github.com/tpope/vim-classpath.git
+[submodule "bundle/vim-sourcepawn"]
+	path = bundle/vim-sourcepawn
+	url = git://github.com/withgod/vim-sourcepawn.git
