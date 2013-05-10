@@ -146,3 +146,6 @@
 [submodule "bundle/scratch.vim"]
 	path = bundle/scratch.vim
 	url = git://github.com/vim-scripts/scratch.vim.git
+[submodule "bundle/vim-protobuf"]
+	path = bundle/vim-protobuf
+	url = git://github.com/uarun/vim-protobuf.git
