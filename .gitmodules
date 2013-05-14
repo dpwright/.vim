@@ -131,3 +131,6 @@
 [submodule "bundle/vim-redl"]
 	path = bundle/vim-redl
 	url = git://github.com/dgrnbrg/vim-redl.git
+[submodule "bundle/vim-classpath"]
+	path = bundle/vim-classpath
+	url = git://github.com/tpope/vim-classpath.git
