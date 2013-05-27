@@ -140,3 +140,6 @@
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = git://github.com/groenewege/vim-less.git
+[submodule "bundle/vim2hs"]
+	path = bundle/vim2hs
+	url = git://github.com/dag/vim2hs.git
