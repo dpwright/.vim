@@ -221,6 +221,12 @@ else
   let g:Powerline_symbols = 'fancy'
 endif
 
+" EasyTags
+let g:easytags_dynamic_files = 1
+let g:easytags_resolve_links=1
+let g:easytags_include_members=1
+let g:easytags_on_cursorhold=0
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Leader keymappings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
