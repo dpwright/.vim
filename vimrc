@@ -86,13 +86,13 @@ else
 endif
 
 " Set tags files
+set tags+=./tags
 set tags+=~/.tags/cpp.tags
 
 " Generate and set local tags file
-command GenerateTags :silent execute "!ctags -R . &" | redraw!
-command GenerateCPPTags :silent execute "!ctags --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -R . &" | redraw!
-command GenerateSourceTags :silent execute "!ctags --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -R source/ &" | redraw!
-set tags+=./tags
+command GenerateTags :silent execute "!ctags -R --fields=+l . &" | redraw!
+command GenerateCPPTags :silent execute "!ctags --c-kinds=+p --c++-kinds=+p --fields=+iaSl --extra=+q --language-force=C++ -R . &" | redraw!
+command GenerateSourceTags :silent execute "!ctags --c-kinds=+p --c++-kinds=+p --fields=+iaSl --extra=+q --language-force=C++ -R source/ &" | redraw!
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Language settings (Spoken)
