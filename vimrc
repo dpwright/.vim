@@ -124,8 +124,10 @@ set background=dark
 let g:solarized_italic = 0
 let g:solarized_termtrans = 1
 let g:solarized_termcolors=16
-set t_Co=16
-colorscheme solarized
+set t_Co=256
+let g:rehash256=1
+colorscheme molokai
+hi link ColorColumn CursorLine
 
 " Rainbow parentheses
 let g:rbpt_max = 30
