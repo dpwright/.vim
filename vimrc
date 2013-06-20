@@ -26,7 +26,7 @@ set cursorline                 " Highlight the current line
 
 " Mouse support (https://wincent.com/blog/tweaking-command-t-and-vim-for-use-in-the-terminal-and-tmux)
 if has('mouse')
-  set mouse=a
+  set mouse=nicr "Don't enter visual mode automatically
   if &term =~ "xterm" || &term =~ "screen"
     " for some reason, doing this directly with 'set ttymouse=xterm2'
     " doesn't work -- 'set ttymouse?' returns xterm2 but the mouse
