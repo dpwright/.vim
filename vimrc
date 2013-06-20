@@ -290,10 +290,10 @@ vnoremap <silent> * :<C-U>
   \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
   \gV:call setreg('"', old_reg, old_regtype)<CR>
 
-" I work with a scripting language called pawn a lot.
-" I've copied the C syntax file into syntax/pawn for this purpose
-let filetype_p = "pawn"
-let filetype_inc = "pawn"
+" Set .p and .inc files to use the sourcepawn filetype
+" (a modified version of standard pawn for which there is a vim plugin)
+let filetype_p = "sourcepawn"
+let filetype_inc = "sourcepawn"
 
 " Support visual-studio style error output
 set errorformat+=\ %#%f(%l\\\,%c):\ %m
