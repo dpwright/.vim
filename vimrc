@@ -22,6 +22,7 @@ set copyindent                 " Copy the previous indentation on autoindenting
 set number                     " Always show line numbers
 set ruler                      " Show line and column number in status bar
 set ls=2                       " Always show status bar
+set cursorline                 " Highlight the current line
 
 " Mouse support (https://wincent.com/blog/tweaking-command-t-and-vim-for-use-in-the-terminal-and-tmux)
 if has('mouse')
