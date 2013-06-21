@@ -51,6 +51,12 @@ let g:mapleader=","
 set list
 set listchars=tab:>-
 
+" Highlight end of line whitespace non-obnoxiously
+" http://sartak.org/2011/03/end-of-line-whitespace-in-vim.html
+autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
+autocmd InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/
+highlight EOLWS ctermbg=red guibg=red
+
 " Tab expansion
 set wildmode=longest,list
 
