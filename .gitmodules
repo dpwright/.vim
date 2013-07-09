@@ -152,3 +152,6 @@
 [submodule "bundle/molokai"]
 	path = bundle/molokai
 	url = git://github.com/tomasr/molokai.git
+[submodule "bundle/vim-glsl"]
+	path = bundle/vim-glsl
+	url = git://github.com/tikhomirov/vim-glsl
