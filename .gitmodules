@@ -161,3 +161,6 @@
 [submodule "bundle/vim-misc"]
 	path = bundle/vim-misc
 	url = git://github.com/xolox/vim-misc
+[submodule "bundle/vimproc"]
+	path = bundle/vimproc
+	url = git://github.com/Shougo/vimproc.vim
