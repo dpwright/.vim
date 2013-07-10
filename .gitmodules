@@ -164,3 +164,6 @@
 [submodule "bundle/vimproc"]
 	path = bundle/vimproc
 	url = git://github.com/Shougo/vimproc.vim
+[submodule "bundle/ghcmod-vim"]
+	path = bundle/ghcmod-vim
+	url = git://github.com/eagletmt/ghcmod-vim
