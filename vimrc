@@ -116,7 +116,7 @@ hi Todo cterm=BOLD ctermbg=red ctermfg=white
 " Only for code (and when not diffing)
 if &diff
 else
-au FileType c,cpp,ruby,pawn exec 'set colorcolumn=' . &textwidth
+au FileType c,cpp,ruby,pawn,haskell,lhaskell exec 'set colorcolumn=' . &textwidth
 endif
 
 " Theme settings -- is setting t_Co in here a good idea?
