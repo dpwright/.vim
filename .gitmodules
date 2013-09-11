@@ -173,3 +173,6 @@
 [submodule "bundle/lushtags"]
 	path = bundle/lushtags
 	url = git://github.com/bitc/lushtags
+[submodule "bundle/rspec.vim"]
+	path = bundle/rspec.vim
+	url = git://github.com/Keithbsmiley/rspec.vim.git
