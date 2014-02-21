@@ -175,6 +175,9 @@ let g:vimclojure#DynamicHighlighting = 1
 
 let g:clojure_align_multiline_strings = 1
 
+" Haskell
+let g:hpaste_author = "dpwright"
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Plugin specific settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
