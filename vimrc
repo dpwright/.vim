@@ -88,7 +88,7 @@ if has("win32")
   set shell=cmd.exe
   set shellcmdflag=/C
 else
-  set shell=bash\ --login
+  set shell=zsh
 endif
 
 " Set tags files
