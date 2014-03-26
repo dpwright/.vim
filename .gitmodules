@@ -61,9 +61,6 @@
 	path = bundle/vim-journal
 	url = git://github.com/jmcantrell/vim-journal.git
 	ignore = dirty
-[submodule "bundle/vim-powerline"]
-	path = bundle/vim-powerline
-	url = git://github.com/pearofducks/vim-powerline.git
 [submodule "bundle/gundo.vim"]
 	path = bundle/gundo.vim
 	url = git://github.com/sjl/gundo.vim.git
