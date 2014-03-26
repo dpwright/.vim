@@ -15,6 +15,8 @@ imap <silent> <m-g> <esc>:IHT<cr>
 map <m-q> :mksession! ~/.vim/.session<cr>
 map <m-s> :source ~/.vim/.session<cr>
 
+set guifont=Monaco\ for\ Powerline:h12
+
 if has("gui_running")
 	if has("gui_win32")
 		" Windows-specific settings
