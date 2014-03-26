@@ -223,11 +223,9 @@ map <F4> :GundoToggle<CR>
 " Yankring
 let g:yankring_history_dir='~/.vim/'
 
-" Powerline
-if has("win32")
-  let g:Powerline_symbols = 'compatible'
-else
-  let g:Powerline_symbols = 'fancy'
+" Airline
+if !has("win32")
+  let g:airline_powerline_fonts = 1
 endif
 
 " EasyTags
