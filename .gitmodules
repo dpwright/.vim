@@ -176,3 +176,6 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
+[submodule "bundle/vim-omake"]
+	path = bundle/vim-omake
+	url = https://github.com/tkztmk/vim-omake.git
