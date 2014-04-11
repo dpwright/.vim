@@ -23,6 +23,8 @@ set number                     " Always show line numbers
 set ruler                      " Show line and column number in status bar
 set ls=2                       " Always show status bar
 set cursorline                 " Highlight the current line
+set modeline                   " Enable modeline settings
+set modelines=1                " Need to set this > 0
 
 " Mouse support (https://wincent.com/blog/tweaking-command-t-and-vim-for-use-in-the-terminal-and-tmux)
 if has('mouse')
