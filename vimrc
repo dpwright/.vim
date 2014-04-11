@@ -156,6 +156,9 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
+" Markdown
+let g:markdown_fenced_languages = ['haskell', 'lisp', 'scheme', 'ruby']
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Language settings (programming)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
