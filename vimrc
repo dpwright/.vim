@@ -259,6 +259,19 @@ let g:ctrlp_map = '<c-p>'
 nnoremap <silent> <Leader>f :CtrlP<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" vim-lldb mappings
+"" Convention: "do*", where * is specific to the operation.
+"" Mnemonic: "Debugger Operation"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:lldb_map_Lbreakpoint = "dob"
+let g:lldb_map_Lstep       = "doi"
+let g:lldb_map_Lfinish     = "doo"
+let g:lldb_map_Lnext       = "do\ "
+let g:lldb_map_Lcontinue   = "doc"
+let g:lldb_map_Lup         = "doj"
+let g:lldb_map_Ldown       = "dok"
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Miscellaneous
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
