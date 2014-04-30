@@ -182,3 +182,6 @@
 [submodule "bundle/vim-lldb"]
 	path = bundle/vim-lldb
 	url = https://github.com/gilligan/vim-lldb.git
+[submodule "bundle/vim-slime"]
+	path = bundle/vim-slime
+	url = https://github.com/jpalardy/vim-slime
