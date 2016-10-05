@@ -19,3 +19,6 @@
 [submodule "pack/ide/start/vim-undotree"]
 	path = pack/ide/start/vim-undotree
 	url = https://github.com/mbbill/undotree.git
+[submodule "pack/ide/start/vim-easy-align"]
+	path = pack/ide/start/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align.git
