@@ -18,6 +18,20 @@ set wildmenu
 " Spellchecking
 set spelllang="en_gb,cjk"
 
+" Syntastic
+set statusline=%f\ %h%w%m%r\ 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+set statusline+=%=%(%l,%c%V\ %=\ %P%)
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
+
 """""""""""""""""""" BACKUP/UNDO/SWAP FILES """"""""""""""""""""
 " This is taken from the following Stack Overflow post: http://stackoverflow.com/a/9528322
 
