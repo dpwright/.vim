@@ -7,3 +7,6 @@
 [submodule "pack/tpope/start/vim-sensible"]
 	path = pack/tpope/start/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
+[submodule "pack/lang/start/swift.vim"]
+	path = pack/lang/start/swift.vim
+	url = https://github.com/keith/swift.vim.git
