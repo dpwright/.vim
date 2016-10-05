@@ -10,3 +10,6 @@
 [submodule "pack/lang/start/swift.vim"]
 	path = pack/lang/start/swift.vim
 	url = https://github.com/keith/swift.vim.git
+[submodule "pack/ide/start/syntastic"]
+	path = pack/ide/start/syntastic
+	url = https://github.com/scrooloose/syntastic.git
