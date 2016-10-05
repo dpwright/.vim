@@ -10,6 +10,7 @@ set t_Co=256
 " Basic options
 set nowrap
 set hlsearch
+set number
 
 " Tab completion
 set wildmode=longest,list,full
