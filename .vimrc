@@ -5,9 +5,15 @@ syntax enable
 
 " WWDC 16 colour scheme
 colorscheme wwdc16
+set t_Co=256
 
 " Basic options
 set nowrap
+set hlsearch
+
+" Tab completion
+set wildmode=longest,list,full
+set wildmenu
 
 " Spellchecking
 set spelllang="en_gb,cjk"
