@@ -13,3 +13,6 @@
 [submodule "pack/ide/start/syntastic"]
 	path = pack/ide/start/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "pack/ide/start/vim-gitgutter"]
+	path = pack/ide/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
