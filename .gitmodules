@@ -1,5 +1,5 @@
 [submodule "pack/vim-wwdc16-theme"]
-	path = pack/themes/start/vim-wwdc16-theme
+	path = pack/themes/opt/vim-wwdc16-theme
 	url = https://github.com/lifepillar/vim-wwdc16-theme.git
 [submodule "pack/tpope/start/vim-fugitive"]
 	path = pack/tpope/start/vim-fugitive

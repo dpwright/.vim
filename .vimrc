@@ -4,6 +4,7 @@ set background=dark
 syntax enable
 
 " WWDC 16 colour scheme
+packadd! vim-wwdc16-theme
 colorscheme wwdc16
 set t_Co=256
 
