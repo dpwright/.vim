@@ -33,6 +33,19 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
 
+" Tagbar
+nmap \\ :TagbarToggle<CR>
+let g:tagbar_autofocus = 1
+let g:tagbar_autoclose = 1
+
+let g:tagbar_show_linenumbers = 1
+let g:tagbar_singleclick = 1
+let g:tagbar_compact = 1
+
+let g:tagbar_autopreview = 0
+let g:tagbar_previewwin_pos = "topleft"
+autocmd BufWinEnter * if &previewwindow | setlocal nonumber | endif
+
 """""""""""""""""""" BACKUP/UNDO/SWAP FILES """"""""""""""""""""
 " This is taken from the following Stack Overflow post: http://stackoverflow.com/a/9528322
 
