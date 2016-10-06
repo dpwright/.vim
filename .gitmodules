@@ -31,3 +31,6 @@
 [submodule "pack/tpope/start/vim-rsi"]
 	path = pack/tpope/start/vim-rsi
 	url = https://github.com/tpope/vim-rsi.git
+[submodule "pack/ide/start/sourcekittendaemon.vim"]
+	path = pack/ide/start/sourcekittendaemon.vim
+	url = https://github.com/keith/sourcekittendaemon.vim.git
