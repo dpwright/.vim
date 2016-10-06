@@ -34,3 +34,6 @@
 [submodule "pack/ide/start/sourcekittendaemon.vim"]
 	path = pack/ide/start/sourcekittendaemon.vim
 	url = https://github.com/keith/sourcekittendaemon.vim.git
+[submodule "pack/ide/start/tagbar"]
+	path = pack/ide/start/tagbar
+	url = https://github.com/majutsushi/tagbar.git
