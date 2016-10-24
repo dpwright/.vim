@@ -34,6 +34,14 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
 
+" Tabs and spaces
+set list
+set listchars=tab:>-
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
 " Tagbar
 nmap \\ :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
