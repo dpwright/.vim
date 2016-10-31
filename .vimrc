@@ -55,6 +55,11 @@ let g:tagbar_autopreview = 0
 let g:tagbar_previewwin_pos = "topleft"
 autocmd BufWinEnter * if &previewwindow | setlocal nonumber | endif
 
+" NetRW
+let g:netrw_preview   = 1
+let g:netrw_liststyle = 3
+let g:netrw_winsize   = -80
+
 """""""""""""""""""" BACKUP/UNDO/SWAP FILES """"""""""""""""""""
 " This is taken from the following Stack Overflow post: http://stackoverflow.com/a/9528322
 
