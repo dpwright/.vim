@@ -60,6 +60,9 @@ let g:netrw_preview   = 1
 let g:netrw_liststyle = 3
 let g:netrw_winsize   = -80
 
+" RSI
+let g:rsi_no_meta = 1
+
 """""""""""""""""""" BACKUP/UNDO/SWAP FILES """"""""""""""""""""
 " This is taken from the following Stack Overflow post: http://stackoverflow.com/a/9528322
 
