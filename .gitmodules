@@ -37,3 +37,6 @@
 [submodule "pack/ide/start/tagbar"]
 	path = pack/ide/start/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+[submodule "pack/ide/start/a.vim"]
+	path = pack/ide/start/a.vim
+	url = https://github.com/vim-scripts/a.vim.git
