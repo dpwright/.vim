@@ -106,3 +106,7 @@ if exists("+undofile")
   set undofile
 endif
 """""""""""""""""" END BACKUP/UNDO/SWAP FILES """"""""""""""""""
+
+" Allow per-project .vimrc files
+set exrc
+set secure " Don't allow unsafe things from this point on (i.e. in per-project .vimrc files)
