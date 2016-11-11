@@ -40,3 +40,6 @@
 [submodule "pack/ide/start/a.vim"]
 	path = pack/ide/start/a.vim
 	url = https://github.com/vim-scripts/a.vim.git
+[submodule "pack/lang/start/llvm.vim"]
+	path = pack/lang/start/llvm.vim
+	url = https://github.com/Superbil/llvm.vim.git
