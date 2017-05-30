@@ -43,3 +43,6 @@
 [submodule "pack/lang/start/llvm.vim"]
 	path = pack/lang/start/llvm.vim
 	url = https://github.com/Superbil/llvm.vim.git
+[submodule "pack/ide/opt/ale.git"]
+	path = pack/ide/opt/ale.git
+	url = https://github.com/w0rp/ale.git
