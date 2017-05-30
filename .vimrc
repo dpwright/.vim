@@ -84,6 +84,9 @@ let g:rsi_no_meta = 1
 " Easy alignment
 xmap ga <Plug>(EasyAlign)
 
+" Regenerate help tags
+silent! helptags ALL
+
 """""""""""""""""""" BACKUP/UNDO/SWAP FILES """"""""""""""""""""
 " This is taken from the following Stack Overflow post: http://stackoverflow.com/a/9528322
 
