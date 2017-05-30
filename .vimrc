@@ -30,21 +30,27 @@ set wildmenu
 " Spellchecking
 set spelllang="en_gb,cjk"
 
-" Syntastic
-packadd! syntastic
+" Use ALE in neovim and Syntastic in vim
+if has('nvim')
+  " ALE
+  packadd! ale.git
+else
+  " Syntastic
+  packadd! syntastic
 
-set statusline=%f\ %h%w%m%r\ 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-set statusline+=%=%(%l,%c%V\ %=\ %P%)
+  set statusline=%f\ %h%w%m%r\ 
+  set statusline+=%#warningmsg#
+  set statusline+=%{SyntasticStatuslineFlag()}
+  set statusline+=%*
+  set statusline+=%=%(%l,%c%V\ %=\ %P%)
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+  let g:syntastic_always_populate_loc_list = 1
+  let g:syntastic_auto_loc_list = 1
+  let g:syntastic_check_on_open = 1
+  let g:syntastic_check_on_wq = 0
 
-let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
+  let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
+endif
 
 " Tabs and spaces
 set list
