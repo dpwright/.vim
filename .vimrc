@@ -3,6 +3,16 @@ filetype plugin indent on
 set background=dark
 syntax enable
 
+" Enable italics
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
+let g:wwdc16_term_italics = 1
+
+" And true colours
+set termguicolors
+let &t_8f="\e[38;2;%lu;%lu;%lum"
+let &t_8b="\e[48;2;%lu;%lu;%lum"
+
 " WWDC 16 colour scheme
 packadd! vim-wwdc16-theme
 colorscheme wwdc16
