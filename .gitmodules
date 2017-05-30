@@ -49,3 +49,6 @@
 [submodule "pack/ide/start/coquille"]
 	path = pack/lang/start/coquille
 	url = https://github.com/the-lambda-church/coquille.git
+[submodule "pack/ide/start/vimbufsync"]
+	path = pack/ide/start/vimbufsync
+	url = https://github.com/let-def/vimbufsync.git
