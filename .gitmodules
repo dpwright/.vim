@@ -11,7 +11,7 @@
 	path = pack/lang/start/swift.vim
 	url = https://github.com/keith/swift.vim.git
 [submodule "pack/ide/start/syntastic"]
-	path = pack/ide/start/syntastic
+	path = pack/ide/opt/syntastic
 	url = https://github.com/scrooloose/syntastic.git
 [submodule "pack/ide/start/vim-gitgutter"]
 	path = pack/ide/start/vim-gitgutter

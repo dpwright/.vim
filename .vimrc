@@ -31,6 +31,8 @@ set wildmenu
 set spelllang="en_gb,cjk"
 
 " Syntastic
+packadd! syntastic
+
 set statusline=%f\ %h%w%m%r\ 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
