@@ -55,3 +55,6 @@
 [submodule "pack/themes/vim-solarized8"]
 	path = pack/themes/opt/vim-solarized8
 	url = https://github.com/lifepillar/vim-solarized8.git
+[submodule "pack/themes/opt/gruvbox"]
+	path = pack/themes/opt/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
