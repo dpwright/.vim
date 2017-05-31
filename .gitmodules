@@ -52,3 +52,6 @@
 [submodule "pack/ide/start/vimbufsync"]
 	path = pack/ide/start/vimbufsync
 	url = https://github.com/let-def/vimbufsync.git
+[submodule "pack/themes/vim-solarized8"]
+	path = pack/themes/opt/vim-solarized8
+	url = https://github.com/lifepillar/vim-solarized8.git
