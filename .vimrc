@@ -6,7 +6,6 @@ syntax enable
 " Enable italics
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
-let g:wwdc16_term_italics = 1
 
 " And true colours
 set termguicolors
@@ -15,8 +14,22 @@ let &t_8b="\e[48;2;%lu;%lu;%lum"
 
 " WWDC 16 colour scheme
 packadd! vim-wwdc16-theme
-colorscheme wwdc16
-set t_Co=256
+let g:wwdc16_term_italics = 1
+
+" Solarized colour scheme
+packadd! vim-solarized8
+let g:solarized_term_italics = 1
+
+" Gruvbox colour scheme
+packadd! gruvbox
+let g:gruvbox_contrast_dark="hard"
+let g:gruvbox_contrast_light="hard"
+
+" Molokai colour scheme
+packadd! molokai
+
+" Select colour scheme
+colorscheme gruvbox
 
 " Basic options
 set nowrap
