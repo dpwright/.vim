@@ -58,3 +58,6 @@
 [submodule "pack/themes/opt/molokai"]
 	path = pack/themes/opt/molokai
 	url = https://github.com/tomasr/molokai.git
+[submodule "pack/lang/start/vim-llvm"]
+	path = pack/lang/start/vim-llvm
+	url = https://github.com/rhysd/vim-llvm.git
