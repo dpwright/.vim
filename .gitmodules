@@ -61,3 +61,6 @@
 [submodule "pack/lang/start/vim-llvm"]
 	path = pack/lang/start/vim-llvm
 	url = https://github.com/rhysd/vim-llvm.git
+[submodule "pack/ide/start/vim-clang-format"]
+	path = pack/ide/start/vim-clang-format
+	url = https://github.com/rhysd/vim-clang-format.git

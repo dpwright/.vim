@@ -97,6 +97,13 @@ let g:rsi_no_meta = 1
 " Easy alignment
 xmap ga <Plug>(EasyAlign)
 
+" clang-format
+autocmd FileType c,cpp,objc,objcpp nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc,objcpp vnoremap <buffer><Leader>cf :ClangFormat<CR>
+nmap <Leader>C :ClangFormatAutoToggle<CR>
+let g:clang_format#detect_style_file = 1
+let g:clang_format#auto_format_on_insert_leave = 1
+
 " Regenerate help tags
 silent! helptags ALL
 
