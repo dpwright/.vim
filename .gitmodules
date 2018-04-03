@@ -64,3 +64,6 @@
 [submodule "pack/tpope/start/vim-eunuch"]
 	path = pack/tpope/start/vim-eunuch
 	url = https://github.com/tpope/vim-eunuch
+[submodule "pack/ide/start/vim-gutentags"]
+	path = pack/ide/start/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags.git
