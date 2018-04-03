@@ -99,6 +99,7 @@ let g:rsi_no_meta = 1
 
 " Easy alignment
 xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 
 " clang-format
 autocmd FileType c,cpp,objc,objcpp nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
