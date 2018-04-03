@@ -64,3 +64,6 @@
 [submodule "pack/ide/start/vim-clang-format"]
 	path = pack/ide/start/vim-clang-format
 	url = https://github.com/rhysd/vim-clang-format.git
+[submodule "pack/tpope/start/vim-eunuch"]
+	path = pack/tpope/start/vim-eunuch
+	url = https://github.com/tpope/vim-eunuch
