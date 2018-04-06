@@ -67,3 +67,6 @@
 [submodule "pack/ide/start/vim-gutentags"]
 	path = pack/ide/start/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags.git
+[submodule "pack/tpope/start/vim-vinegar"]
+	path = pack/tpope/start/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar.git
