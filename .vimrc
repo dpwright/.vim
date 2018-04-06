@@ -142,6 +142,7 @@ set directory+=.
 
 " viminfo stores the the state of your previous editing session
 if !has('nvim')
+  set viminfo+='100,f1
   set viminfo+=n~/.vim/viminfo
 endif
 
