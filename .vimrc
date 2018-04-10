@@ -89,11 +89,6 @@ let g:tagbar_autopreview = 0
 let g:tagbar_previewwin_pos = "topleft"
 autocmd BufWinEnter * if &previewwindow | setlocal nonumber | endif
 
-" NetRW
-let g:netrw_preview   = 1
-let g:netrw_liststyle = 3
-let g:netrw_winsize   = -80
-
 " RSI
 let g:rsi_no_meta = 1
 
