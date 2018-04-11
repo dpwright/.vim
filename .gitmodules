@@ -37,9 +37,6 @@
 [submodule "pack/ide/start/a.vim"]
 	path = pack/ide/start/a.vim
 	url = https://github.com/vim-scripts/a.vim.git
-[submodule "pack/ide/opt/ale.git"]
-	path = pack/ide/opt/ale.git
-	url = https://github.com/w0rp/ale.git
 [submodule "pack/ide/start/coquille"]
 	path = pack/lang/start/coquille
 	url = https://github.com/the-lambda-church/coquille.git
