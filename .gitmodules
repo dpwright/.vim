@@ -73,3 +73,6 @@
 [submodule "pack/util/start/gv.vim"]
 	path = pack/util/start/gv.vim
 	url = https://github.com/junegunn/gv.vim.git
+[submodule "pack/tpope/start/vim-commentary"]
+	path = pack/tpope/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
