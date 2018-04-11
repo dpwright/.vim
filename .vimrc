@@ -43,9 +43,6 @@ set wildmenu
 " Spellchecking
 set spelllang="en_gb,cjk"
 
-" Git
-command -nargs=* Glg Git! lg <args>
-
 " Use ALE in neovim and Syntastic in vim
 if has('nvim')
   " ALE
