@@ -28,6 +28,9 @@ let g:gruvbox_contrast_light="hard"
 " Molokai colour scheme
 packadd! molokai
 
+" vim-colors-plain colour scheme
+packadd! vim-colors-plain
+
 " Select colour scheme
 colorscheme gruvbox
 

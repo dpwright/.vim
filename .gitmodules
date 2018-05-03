@@ -76,3 +76,6 @@
 [submodule "pack/tpope/start/vim-obsession"]
 	path = pack/tpope/start/vim-obsession
 	url = https://github.com/tpope/vim-obsession.git
+[submodule "pack/themes/opt/vim-colors-plain"]
+	path = pack/themes/opt/vim-colors-plain
+	url = https://github.com/andreypopp/vim-colors-plain.git
