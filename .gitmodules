@@ -79,3 +79,6 @@
 [submodule "pack/themes/opt/vim-colors-plain"]
 	path = pack/themes/opt/vim-colors-plain
 	url = https://github.com/andreypopp/vim-colors-plain.git
+[submodule "pack/util/start/vim-twiggy"]
+	path = pack/util/start/vim-twiggy
+	url = https://github.com/sodapopcan/vim-twiggy.git
