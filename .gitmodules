@@ -82,3 +82,6 @@
 [submodule "pack/util/start/vim-twiggy"]
 	path = pack/util/start/vim-twiggy
 	url = https://github.com/sodapopcan/vim-twiggy.git
+[submodule "pack/util/start/vim-conflicted"]
+	path = pack/util/start/vim-conflicted
+	url = https://github.com/christoomey/vim-conflicted.git
