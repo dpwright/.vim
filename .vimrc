@@ -46,6 +46,12 @@ set wildmenu
 " Spellchecking
 set spelllang="en_gb,cjk"
 
+" Terminal
+if has('terminal')
+  tnoremap <C-W>gt <C-W>:tabn<CR>
+  tnoremap <C-W>gT <C-W>:tabp<CR>
+endif
+
 " Syntastic
 set statusline=%f\ %h%w%m%r\ 
 set statusline+=%#warningmsg#
