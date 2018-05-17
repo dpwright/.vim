@@ -48,7 +48,7 @@
 	url = https://github.com/lifepillar/vim-solarized8.git
 [submodule "pack/themes/opt/gruvbox"]
 	path = pack/themes/opt/gruvbox
-	url = https://github.com/morhetz/gruvbox.git
+	url = https://github.com/dpwright/gruvbox.git
 [submodule "pack/themes/opt/molokai"]
 	path = pack/themes/opt/molokai
 	url = https://github.com/tomasr/molokai.git
