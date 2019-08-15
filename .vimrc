@@ -31,8 +31,15 @@ packadd! molokai
 " vim-colors-plain colour scheme
 packadd! vim-colors-plain
 
+" Other low-colour colour schemes
+packadd! atlas.vim
+packadd! vim-colors-off
+packadd! vim-colors-pencil
+packadd! vim-monotone
+packadd! vim-yin-yang
+
 " Select colour scheme
-colorscheme gruvbox
+colorscheme off
 
 " Basic options
 set nowrap

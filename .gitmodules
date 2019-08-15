@@ -85,3 +85,18 @@
 [submodule "pack/util/start/vim-conflicted"]
 	path = pack/util/start/vim-conflicted
 	url = https://github.com/christoomey/vim-conflicted.git
+[submodule "pack/themes/opt/vim-colors-off"]
+	path = pack/themes/opt/vim-colors-off
+	url = https://github.com/pbrisbin/vim-colors-off.git
+[submodule "pack/themes/opt/atlas.vim"]
+	path = pack/themes/opt/atlas.vim
+	url = https://github.com/huyvohcmc/atlas.vim.git
+[submodule "pack/themes/opt/vim-monotone"]
+	path = pack/themes/opt/vim-monotone
+	url = https://github.com/Lokaltog/vim-monotone.git
+[submodule "pack/themes/opt/vim-colors-pencil"]
+	path = pack/themes/opt/vim-colors-pencil
+	url = https://github.com/reedes/vim-colors-pencil.git
+[submodule "pack/themes/opt/vim-yin-yang"]
+	path = pack/themes/opt/vim-yin-yang
+	url = https://github.com/pgdouyon/vim-yin-yang.git
