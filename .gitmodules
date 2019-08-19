@@ -100,3 +100,6 @@
 [submodule "pack/themes/opt/vim-yin-yang"]
 	path = pack/themes/opt/vim-yin-yang
 	url = https://github.com/pgdouyon/vim-yin-yang.git
+[submodule "pack/util/start/fzf.vim"]
+	path = pack/util/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
