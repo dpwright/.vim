@@ -103,3 +103,6 @@
 [submodule "pack/util/start/fzf.vim"]
 	path = pack/util/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "pack/util/start/diffchar.vim"]
+	path = pack/util/start/diffchar.vim
+	url = https://github.com/rickhowe/diffchar.vim.git

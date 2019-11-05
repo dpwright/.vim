@@ -137,6 +137,9 @@ nmap zzc :Commits<cr>
 nmap zz* :Rg <c-r>=expand("<cword>")<cr><cr>
 nmap zz] :Tags <c-r>=expand("<cword>")<cr><cr>
 
+" diffchar
+let g:DiffUnit="Word1"
+
 " Regenerate help tags
 silent! helptags ALL
 
