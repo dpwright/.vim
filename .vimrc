@@ -110,6 +110,9 @@ let g:clang_format#auto_format_on_insert_leave = 0
 let g:clang_format#auto_format = 1
 let g:clang_format#auto_formatexpr = 1
 
+" Remap zz to space (nice speedup, and it allows me to use zz as a prefix below)
+nnoremap <space> zz
+
 " fzf
 set rtp+=~/.fzf
 let g:fzf_colors =
